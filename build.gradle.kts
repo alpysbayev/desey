@@ -25,6 +25,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	implementation("org.xerial:sqlite-jdbc:3.32.3.2")
+	implementation("com.github.gwenn:sqlite-dialect:0.1.0")
 }
 
 tasks.withType<KotlinCompile> {
