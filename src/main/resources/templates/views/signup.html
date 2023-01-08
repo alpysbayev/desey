@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+
+    <body>
+
+        <div layout:fragment="content" style="width: 30%; margin: auto">
+            <h1 style="margin: auto">SIGNUP PAGE</h1><br><br><br>
+
+            <form class="container-sm flex-box" method="post">
+
+                    <input class="form-control" type="text" placeholder="e-mail"
+                           name="e-mail" id="e-mail" aria-label=""><br>
+
+                    <input class="form-control" type="text" placeholder="username"
+                           name="username" id="username" aria-label=""><br>
+
+                    <input class="form-control" type="text" placeholder="firstname"
+                           name="firstname" id="firstname" aria-label=""><br>
+
+                    <input class="form-control" type="text" placeholder="lastname"
+                           name="lastname" id="lastname" aria-label=""><br>
+
+                    <input class="form-control" type="text" placeholder="password"
+                           name="password" id="password" aria-label=""><br>
+
+                    <input class="form-control" type="text" placeholder="confirm"
+                           name="confirm" id="confirm" aria-label=""><br>
+
+                    <button class="btn btn-success btn-lg" type="submit">Sign Up</button>
+
+            </form>
+        </div>
+
+    </body>
+
+</html>

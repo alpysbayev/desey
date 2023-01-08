@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+
+    <body>
+
+        <div layout:fragment="content" style="width: 30%; margin: auto">
+            <h1 style="margin: auto">LOGIN PAGE</h1><br><br><br>
+
+            <form class="container-sm flex-box" method="post" th:action="@{/login}">
+
+                <input class="form-control" type="text" placeholder="username"
+                       name="username" id="username" aria-label=""><br>
+
+                <input class="form-control" type="text" placeholder="password"
+                       name="password" id="password" aria-label=""><br>
+
+                <button sec class="btn btn-success btn-lg" type="submit">Log In</button>
+
+<!--                <div class="form-check">-->
+<!--                    <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">-->
+<!--                    <label class="form-check-label" for="remember-me">Remember me?</label>-->
+<!--                </div>-->
+
+            </form>
+        </div>
+
+    </body>
+
+</html>

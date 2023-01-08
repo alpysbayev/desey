@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Desey</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+              crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div th:replace="fragments/header"></div>
+
+        <div layout:fragment="content" class="container d-flex flex-wrap"></div>
+
+        <div class="container" th:insert="fragments/footer"></div>
+
+    </body>
+
+</html>
