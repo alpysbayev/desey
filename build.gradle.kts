@@ -26,6 +26,15 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
+
+	// Thymeleaf
+//	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+//	implementation("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
+//	implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5")
+
+	//SQLite
+	implementation("org.xerial:sqlite-jdbc:3.32.3.2")
+	implementation("com.github.gwenn:sqlite-dialect:0.1.0")
 }
 
 tasks.withType<KotlinCompile> {
