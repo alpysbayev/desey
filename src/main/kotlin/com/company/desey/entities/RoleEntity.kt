@@ -13,5 +13,4 @@ class RoleEntity (
     @Column(name = "name")
     val name: String
 
-
 )

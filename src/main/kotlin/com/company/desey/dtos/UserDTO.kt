@@ -13,7 +13,7 @@ data class UserDTO (
     val firstname: String = "",
     val lastname: String = "",
 
-    val bio: String? = "",
+    val bio: String = "",
     val birthday: String = "",
     val phone: String = ""
 )
